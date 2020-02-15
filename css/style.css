@@ -97,6 +97,25 @@ section.sec1 {
   line-height: 30px;
 }
 
+
+.sec1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+header * {
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin: 0;
+  padding: 1em 0;
+}
+
+h1 {
+  font-size: 100px;
+}
 /*============================================================================================
 ==============================        Section 2        =============================
 ==============================================================================================*/
@@ -104,88 +123,50 @@ section.sec1 {
 .sec2{
   height:300px;
   background:gray;
+  margin: 30px auto;
 }
 
 
 
-.hello {
-  opacity: 1 !important;
+/*============================================================================================
+==============================        Section 3       =============================
+==============================================================================================*/
+
+
+.container {
+  padding: 1em;
+  column-count: 4;
 }
 
-.full {
-  position: fixed;
-  left: 0;
-  top: 0;
+.container img{
   width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.full .contents {
-  background-color: rgba(0,0,0,0.75) !important;
-  height: 100%;
-  width: 100%;
-  display: grid;
-}
-
-.full .contents img {
-  left: 50%;
-  transform: translate(0, 0 , 0);
-  animation: zoomin 1s ease;
-  max-width: 100%;
-  max-height: 100%;
-  margin: auto;
-}
-
-.byebye {
-  opacity: 0;
-}
-
-.byebye:hover {
-  transform: scale(0.2) !important;
-}
-
-.gallery {
-  display: grid;
-  grid-column-gap: 8px;
-  grid-row-gap: 8px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: 8px;
-}
-
-.gallery img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 16px #333;
-  transition: all 1.5s ease;
-}
-.gallery img:hover {
-  box-shadow: 0 0 32px #333;
-}
-.gallery .contents {
-  padding: 4px;
-}
-
-.gallery .gallery-item {
-  transition: grid-row-start 300ms linear;
-  transition: transform 300ms ease;
-  transition: all 0.5s ease;
+  margin: 1em;
   cursor: pointer;
+  transition: 0.5s;
 }
 
-.gallery .gallery-item:hover {
-  transform: scale(1.025);
+.container img:hover{
+  transform: scale(1.055);
 }
 
 
+@media(max-width: 800px){
+  .container{
+      column-count: 3;
+  }
+}
 
+@media(max-width: 600px){
+  .container{
+      column-count: 2;
+  }
+}
 
-
-
-
-
-
-
+@media(max-width: 400px){
+  .container{
+      column-count: 1;
+  }
+}
 
 
 
