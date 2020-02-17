@@ -7,7 +7,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Quicksand'
+  font-family: 'Quicksand';
+  background: #100806;
+  color: white;
+  
 }
 
 nav {
@@ -22,7 +25,7 @@ nav {
 }
 
 nav.black {
-  background: rgba(0,0,0,0.8);
+  background: rgba(17, 0, 0, 0.8);
   height: 100px;
   padding: 10px 100px;
 }
@@ -53,7 +56,7 @@ nav ul li {
 
 nav ul li a {
   line-height: 80px;
-  color: #151515;
+  color: #fff;
   padding: 12px 30px;
   text-decoration: none;
   text-transform: uppercase;
@@ -75,7 +78,7 @@ nav ul li a.active {
 }
 
 a:hover{
-  color:white;
+  color:#100806;
 }
 
 section.sec1 {
@@ -86,8 +89,25 @@ section.sec1 {
   background-position: center;
 }
 
+#portfolio-section-styles{
+  width: 100%;
+  height: 100vh;
+  background: url(/css/images/Blue-orbs.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+#contact-section-styles{
+  width: 100%;
+  height: 70vh;
+  background: url(/css/images/Contrast.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .content {
-  margin-top: 80px;
+  margin-top: 190px;
+  height: 400px;
 }
 
 .content p {
@@ -115,22 +135,85 @@ header * {
 
 h1 {
   font-size: 100px;
+  text-align: center;
+  
 }
 /*============================================================================================
-==============================        Section 2        =============================
+==============================        Contact CSS       =============================
 ==============================================================================================*/
 
-.sec2{
-  height:300px;
-  background:gray;
-  margin: 30px auto;
+.wrapper {
+  position: relative;
+  top: 20%;
+  width: 100%;
 }
 
+.contact-form{
+  max-width: 1080px;
+  margin: 0 auto;
+  ;
+  display: flex;
+  padding: 30px;
+}
 
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields, .msg{
+  width: 48%;
+}
+
+.input-fields .input, .msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 90%;
+}
+
+.msg textarea{
+  height: 186px;
+}
+
+.btn{
+  background: #39b7dd;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields, msg{
+    width: 100%;
+  }
+}
+
+.contact-header {
+  text-align: center;
+}
 
 /*============================================================================================
-==============================        Section 3       =============================
+==============================        Portfolio CSS       =============================
 ==============================================================================================*/
+
+img{
+  border: white border 10px;
+
+}
 
 
 .container {
@@ -168,6 +251,21 @@ h1 {
   }
 }
 
+
+
+/*============================================================================================
+==============================        Footer CSS       =============================
+==============================================================================================*/
+
+
+footer{
+  height: 225px;
+  background: #100806;
+}
+
+.instagram-symbol{
+  
+}
 
 
 
