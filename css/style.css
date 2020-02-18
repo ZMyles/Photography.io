@@ -263,9 +263,14 @@ footer{
   background: #100806;
 }
 
-.instagram-symbol{
-  
+
+
+a{
+  text-decoration: none;
+  color: white;
 }
+
+
 
 
 

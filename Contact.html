@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Zavier Myles</title>
+  <title>Contact - Zavier Myles</title>
   <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -37,17 +37,19 @@
     <div class="wrapper">
       <div class="contact-form">
         <div class="input-fields">
-          <input type="text" class="input" placeholder="First Name">
-          <input type="text" class="input" placeholder="Last Name">
-          
-          <input type="text" class="input" placeholder="Email Address">
-          <input type="text" class="input" placeholder="Subject">
-         
-          
+
+          <form action="https://formspree.io/zmyles1998@gmail.com"
+          method="POST">
+          <input type="text" id ="name" class="input" placeholder="First Name" name="firstName">
+          <input type="text" class="input" placeholder="Last Name"  name="lastName">
+          <input type="text" class="input" placeholder="Subject" name="subject">
+          <input type="text" id = "email" class="input" placeholder="Email Address" name="email">
+           </form>
+
         </div>
         <div class="msg">
-          <textarea placeholder= "Message"></textarea>
-            <div class="btn">Send</div>
+          <textarea placeholder="Message" name="message"></textarea>
+            <div id="submit" class="btn">Send</div>
 
         </div>
       </div>
