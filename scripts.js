@@ -84,3 +84,8 @@ $(document).ready(function () {
 function show() {
   document.getElementById('sidebar').classList.toggle('active');
 }
+
+
+function off() {
+  document.getElementById('wrapper').classList.toggle('active');
+}

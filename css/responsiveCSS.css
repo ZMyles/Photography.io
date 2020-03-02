@@ -2,16 +2,15 @@
 ==============================        RESPONSIVENESS!!!     =============================
 ==============================================================================================*/
 
-
-
+#sidebar {
+  display: none;
+}
 
 @media screen and (max-width: 950){
   h1{
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  
+  }  
 }
 
 @media screen and (max-width: 992px) {
@@ -44,6 +43,94 @@
    height: 40vh;
   }
 }
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+@media screen and (max-width: 900px) {
+  .topnav a:not(:first-child) {display: none;}
+ .topnav a.icon {
+   float: right;
+   display: block;
+ } 
+ 
+  li {
+   display: none;
+ } 
+
+  .topnav .icon {
+   padding: 22px 20px;
+   height: 80px;
+ }
+
+.dropDown{
+  height: 30px;
+  width: 30px;
+}
+
+#sidebar {
+  display: flex;
+}
+
+#sidebar{
+ position: absolute;
+ width: 50vh;
+ height: 100%;
+ background: black;
+ right: 1000px;
+}
+
+#sidebar.active {
+ left: 0;
+ z-index: 6;
+ height: 150%;
+}
+
+
+.format {
+  position: fixed;;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+
+
+.format a{
+ margin-top: 60px;
+ 
+}
+
+.format a:hover {
+  color: red;
+}
+
+#sidebar .format {
+ font-size: 40px;
+ padding: 20px 24px; 
+}
+
+#sidebar .toggle-btn {
+ position: relative;
+ top: 30px;
+ left: 630px;
+}
+
+.toggle-btn span {
+ width: 45px;
+ height: 4px;
+ background: #fff;
+ display: block;
+ margin-top: 4px;
+}
+
+}
+
+
+/*=========================================================================
+==========================================================================
+=====================================================================*/
 
 
 @media screen and (max-width: 800px) {
@@ -80,45 +167,11 @@
     padding: 10px 10px;
   }
 
-
-
-  #sidebar{
-    position: relative;
-    width: 300px;
-    height: 100%;
-    background: black;
-    left: -300px;
-  }
-
-  #sidebar.active {
-    left: 0;
-  }
-
-  #sidebar ul li {
-    font-size: 20px;
-    padding: 20px 24px;
-  }
-
-  #sidebar .toggle-btn {
-    position: absolute;
-    top: 30px;
-    left: 330px;
-  }
-
-  .toggle-btn span {
-    width: 45px;
-    height: 4px;
-    background: #000;
-    display: block;
-    margin-top: 4px;
-  }
-
-
-
-
-
 }
 
+/*=========================================================================
+==========================================================================
+=====================================================================*/
 
 @media screen and (max-width: 700px) {
   h1 {
@@ -131,7 +184,32 @@
     font-size: 30px;
   }
 
+
 }
+
+/*=========================================================================
+==========================================================================
+=====================================================================*/
+
+@media screen and (max-width: 636px) {
+  section.sec1 {
+    /* background: url(/css/images/Blue-orbs.JPG); */
+    background: cover;
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+  }
+
+  .content{
+    margin-top: 90px;
+  }
+
+}
+
+/*=========================================================================
+==========================================================================
+=====================================================================*/
+
 
 @media screen and (max-width: 500px) {
   .contact100-form-title { 
@@ -163,6 +241,8 @@
   .absolute {
     position: absolute;
   }
+
+  
 }
 
 
@@ -189,31 +269,29 @@
 }
 
 /*=========================================================================
-==========================================================================*/
+==========================================================================
+=====================================================================*/
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 
-@media screen and (max-width: 900px) {
-   .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  } 
-  
-   li {
-    display: none;
-  } 
-
-   .topnav .icon {
-    padding: 22px 20px;
-    height: 80px;
+ @media screen and (max-width: 450px) {
+  h1 {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-
- .dropDown{
-   height: 30px;
-   width: 30px;
  }
 
+ /*=========================================================================
+==========================================================================
+=====================================================================*/
+
+ @media screen and (max-width: 375px) {
+   nav {
+     padding: 20px;
+   }
+ }
+
+ 
 
 
 
