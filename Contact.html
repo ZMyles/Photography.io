@@ -4,63 +4,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact - Zavier Myles</title>
+  <title>Contact -- Zavier Myles</title>
   <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact-styles.css">
+  <link rel="stylesheet" href="css/responsiveCSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> <!--GOOGLE FONT-->
 </head>
 <body>
     
-<div class="wrapper">
-  <nav>
-    <div class="logo">LOGO</div>
-    <ul>
+  <nav class="absolute">
+    <a href="index.html"><div class="logo">LOGO</div></a>
+    <ul class="topnav">
         <li><a href="index.html">Home</a></li>
         <li><a href="/#About">About</a></li>
-        <li><a href="/Media.html">Media</a></li>
+        <li><a href="/Media.html">Portfolio</a></li>
         <li><a href="/Contact.html">Contact</a></li>
+        <a href="scripts.js" class="icon" onclick="myFunction()">
+          <img src="css/images/open-menu.png" class="dropDown">
+      </a>
     </ul>
   </nav>
   <section class="sec1" id="contact-section-styles">
     <header>
-        <h1>Contact</h1>
+        <h1>CONTACT</h1>
     </header>
     
   </section>
+
+  <section>
+
+    <div class="container-contact100" >
+      <div class="wrap-contact100">
+        <form class="contact100-form validate-form">
+          <span class="contact100-form-title">
+            Get in Touch
+          </span>
   
+          <div class="wrap-input100 rs1-wrap-input100 validate-input" >
+            <input class="input100" type="text" name="name" placeholder="First Name">
+          </div>
+  
+          <div class="wrap-input100 rs1-wrap-input100 validate-input">
+            <input class="input100" type="text" name="email" placeholder="Last Name">
+          </div>
+  
+          <div class="wrap-input100">
+            <input class="input100" type="text" name="web" placeholder="Email">
+          </div>
 
-  <section id="contact">
-
-    <div class="wrapper">
-      <div class="contact-form">
-        <div class="input-fields">
-
-          <form action="https://formspree.io/zmyles1998@gmail.com"
-          method="POST">
-          <input type="text" id ="name" class="input" placeholder="First Name" name="firstName">
-          <input type="text" class="input" placeholder="Last Name"  name="lastName">
-          <input type="text" class="input" placeholder="Subject" name="subject">
-          <input type="text" id = "email" class="input" placeholder="Email Address" name="email">
-           </form>
-
-        </div>
-        <div class="msg">
-          <textarea placeholder="Message" name="message"></textarea>
-            <div id="submit" class="btn">Send</div>
-
-        </div>
+          <div class="wrap-input100">
+              <input class="input100" type="text" name="web" placeholder="Subject">
+            </div>
+  
+          <div class="wrap-input100 validate-input">
+            
+            <textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+          </div>
+  
+          <div class="container-contact100-form-btn">
+            <div class="wrap-contact100-form-btn">
+              <div class="contact100-form-bgbtn"></div>
+              <button class="contact100-form-btn">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
+    
 
-    </div>
-
-  </section>
-
-  <footer>
-      <img src="css/images/instagram.png" alt="instagram" class="instagram-symbol">
-  </footer>
+      <footer>
+          <a href="https://www.instagram.com/fujiponyo/"><div alt="instagram" class="instagram-symbol"></div></a>
+          <div class="arrow" > </div>
+          <div class="footer-text">Follow me on Instagram</div>
+      </footer>
   
 
 <script src="scripts.js"></script>

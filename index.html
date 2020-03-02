@@ -11,26 +11,58 @@
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact-styles.css">
+  <link rel="stylesheet" href="css/responsiveCSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> <!--GOOGLE FONT-->
 </head>
 <body>
     
 <div class="wrapper">
-  <nav>
-    <div class="logo" >LOGO</div>
-    <ul>
+
+<!-- <div id="sidebar">
+         <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="/Media.html">Portfolio</a></li>
+            <li><a href="/Contact.html">Contact</a></li>
+        </ul>
+    </div> -->
+
+   <div id="sidebar"><nav>
+      <a href="index.html"></a><div class="logo">LOGO</div></a> 
+
+
+      <ul class="topnav">
       <li><a href="index.html">Home</a></li>
       <li><a href="#About">About</a></li>
-      <li><a href="/Media.html">Media</a></li>
+      <li><a href="/Media.html">Portfolio</a></li>
       <li><a href="/Contact.html">Contact</a></li>
+      <a href="#" class="icon" onclick="show()">
+        <img src="css/images/open-menu.png" class="dropDown">
+    </a>
+
     </ul>
-  </nav>
+  </nav></div> 
+    
+
+   
+    
+    
+
+
   <section class="sec1" >
     
     <header>
-        <h1>Turn Nothing to Something</h1>
-        <div class="wrapper">
-            <a href="/Contact.html" class="btn-Contact">CONTACT ME</a>
+        <h1>TURN NOTHING INTO SOMETHING</h1>
+        <div class="wrap topnav">
+            <a href="/Contact.html" class="contact-btn">CONTACT ME</a>
         </div>
         
     </header>
@@ -39,7 +71,7 @@
   
   <section class="content">
 
-    <h1 id="About">Who Is Zavier Myles?</h1>
+    <h2 id="About">Who Is Zavier Myles?</h2>
 
     <p>
         Spicy jalapeno short loin pastrami in pork chop minim ex pork loin. Lorem turkey in, filet mignon aliqua deserunt officia proident et jowl shank minim short ribs. Id eiusmod beef ribs ham, turducken kielbasa sed short loin pork pork loin doner bresaola velit swine tempor. Ad shank turkey, hamburger consequat ham hock eiusmod kevin dolor strip steak mollit laboris ipsum pork.
@@ -48,26 +80,20 @@
   </section>
 
   <footer>
-      <img src="css/images/instagram.png" alt="instagram" class="instagram-symbol">
+      <a href="https://www.instagram.com/fujiponyo/"><div alt="instagram" class="instagram-symbol"></div></a>
+      <div class="arrow" > </div>
+      <div class="footer-text">Follow me on Instagram</div>
   </footer>
- 
+
+
   
+
+  
+
+
 </div>
 
-
-
-
-
- 
-
-
-  
-
-
-
-
-
-
 <script src="scripts.js"></script>
+
 </body>
 </html>

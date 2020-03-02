@@ -1,0 +1,229 @@
+/*============================================================================================
+==============================        RESPONSIVENESS!!!     =============================
+==============================================================================================*/
+
+
+
+
+@media screen and (max-width: 950){
+  h1{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  
+}
+
+@media screen and (max-width: 992px) {
+  section.sec1{
+    height: 400px;
+    background-position: 0 -30px;
+  }
+
+  h1{
+    font-size: 50px;
+  }
+
+  h2{
+    font-size: 30px;
+  }
+
+  .content p {
+   width: 90%;
+  }
+
+  #contact-section-styles {
+    height: 40vh;
+  }
+
+  .wrap-contact100 {
+    margin-top: 10px;
+  }
+
+  #contact-section-styles {
+   height: 40vh;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+   section.sec1{
+     height: 400px;
+     background-position: 0 -30px;
+   }
+
+   h1{
+     font-size: 50px;
+   }
+
+   h2{
+     font-size: 30px;
+   }
+
+   .content p {
+    width: 90%;
+   }
+
+   #contact-section-styles {
+     height: 40vh;
+   }
+
+   .wrap-contact100 {
+     margin-top: 10px;
+   }
+
+   #contact-section-styles {
+    height: 40vh;
+   }
+
+   nav.black {
+    padding: 10px 10px;
+  }
+
+
+
+  #sidebar{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    background: black;
+    left: -300px;
+  }
+
+  #sidebar.active {
+    left: 0;
+  }
+
+  #sidebar ul li {
+    font-size: 20px;
+    padding: 20px 24px;
+  }
+
+  #sidebar .toggle-btn {
+    position: absolute;
+    top: 30px;
+    left: 330px;
+  }
+
+  .toggle-btn span {
+    width: 45px;
+    height: 4px;
+    background: #000;
+    display: block;
+    margin-top: 4px;
+  }
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .contact100-form-title { 
+      font-size: 25px;
+  }
+
+  nav.black{
+      padding: 10px 10px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  input.input100 {
+    font-size: 15px;
+    height: 40px;
+  }
+
+  .input100{
+    font-size: 15px;
+  }
+
+  textarea.input100{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .absolute {
+    position: absolute;
+  }
+}
+
+
+
+
+/*============================================================================================
+==============================        DropDown NAV CSS       =============================
+==============================================================================================*/
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.dropMenu{
+  visibility: hidden;
+}
+
+/*=========================================================================
+==========================================================================*/
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+@media screen and (max-width: 900px) {
+   .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  } 
+  
+   li {
+    display: none;
+  } 
+
+   .topnav .icon {
+    padding: 22px 20px;
+    height: 80px;
+  }
+
+ .dropDown{
+   height: 30px;
+   width: 30px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
