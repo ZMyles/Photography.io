@@ -80,12 +80,35 @@ $(document).ready(function () {
 
 
 
-
+// Pop out Nav bar
 function show() {
-  document.getElementById('sidebar').classList.toggle('active');
+ var yes = document.getElementById('sidebar').classList.toggle('active');
+
+
+ // IF STATMENT CHECKS TO MAKE SURE THAT THE BUTTON HAS BEEEN CLICKED AND LOCKS IN NAV TO PREVENT ABLE TO SCROLL WHILE USING THE NAV
+ if( yes === true ){
+   console.log('yes');
+  var element = document.getElementById('noMove');
+   element.classList.add('stop');
+ } else{
+   console.log('Off');
+   var element = document.getElementById('noMove');
+   element.classList.toggle('stop');
+ }
 }
 
 
-function off() {
-  document.getElementById('wrapper').classList.toggle('active');
+//THIS WAS CREATED BECAUSE THE NAV DOES NOT TOGGLE OFF AFTER BEING CLICKED
+function hideNav() {
+  var yes = document.getElementById('sidebar').classList.toggle('active');
+
+  if( yes === true ){
+    console.log('yes');
+   var element = document.getElementById('noMove');
+    element.classList.add('stop');
+  } else{
+    console.log('Off');
+    var element = document.getElementById('noMove');
+    element.classList.toggle('stop');
+}
 }

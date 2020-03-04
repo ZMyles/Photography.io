@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> <!--GOOGLE FONT-->
 </head>
-<body>
+<body id="noMove">
     
   <nav class="absolute">
     <a href="index.html"><div class="logo">LOGO</div></a>
@@ -24,11 +24,27 @@
         <li><a href="/#About">About</a></li>
         <li><a href="/Media.html">Portfolio</a></li>
         <li><a href="/Contact.html">Contact</a></li>
-        <a href="scripts.js" class="icon" onclick="myFunction()">
+        <a href="#" class="icon" onclick="show()">
           <img src="css/images/open-menu.png" class="dropDown">
-      </a>
+        </a>
     </ul>
   </nav>
+
+  <div id="sidebar">
+    
+      <diV class="format">
+        <a href="index.html">Home</a>
+        <a href="/#About" onclick="hideNav()">About</a>
+        <a href="/Media.html">Portfolio</a>
+        <a href="/Contact.html">Contact</a>
+      </diV> 
+
+      <a  href="#" class="toTheRight" onclick="show()">
+        <img src="css/images/close.png" class="close-btn" >
+      </a>
+  </div>
+
+
   <section class="sec1" id="contact-section-styles">
     <header>
         <h1>CONTACT</h1>

@@ -70,14 +70,16 @@
 
 #sidebar {
   display: flex;
+  
 }
 
 #sidebar{
  position: absolute;
- width: 50vh;
+ width: 100%;
  height: 100%;
- background: black;
+ background: #100806;
  right: 1000px;
+ text-align: center;
 }
 
 #sidebar.active {
@@ -87,19 +89,35 @@
 }
 
 
-.format {
-  position: fixed;;
 
- display: flex;
- flex-direction: column;
- justify-content: space-between;
+.stop{
+  overflow: hidden;
 }
 
 
+.format {
+position: fixed;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ text-align: center;
+ width: 100%;
+ height: 80%;
+}
+
+.close-btn{
+  background: url(/css/images/close.png);
+  background: center;
+  position: relative;
+  z-index: 20;
+  height: 30px;
+  width: 30px;
+  margin: 30px;
+}
 
 .format a{
- margin-top: 60px;
- 
+ margin-top: 65px;
+  
 }
 
 .format a:hover {
@@ -111,25 +129,19 @@
  padding: 20px 24px; 
 }
 
-#sidebar .toggle-btn {
- position: relative;
- top: 30px;
- left: 630px;
-}
-
-.toggle-btn span {
- width: 45px;
- height: 4px;
- background: #fff;
- display: block;
- margin-top: 4px;
+.toTheRight {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 20px;
+  height: 30px;
 }
 
 }
 
 
 /*=========================================================================
-==========================================================================
+================================  800 Px  ==================================
 =====================================================================*/
 
 
@@ -170,7 +182,7 @@
 }
 
 /*=========================================================================
-==========================================================================
+===============================  700 Px  ===============================
 =====================================================================*/
 
 @media screen and (max-width: 700px) {
@@ -184,11 +196,17 @@
     font-size: 30px;
   }
 
+  .toTheRight {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px;
+  }
 
 }
 
 /*=========================================================================
-==========================================================================
+================================  636 Px  ===============================
 =====================================================================*/
 
 @media screen and (max-width: 636px) {
@@ -207,7 +225,7 @@
 }
 
 /*=========================================================================
-==========================================================================
+==============================  500 Px  ================================
 =====================================================================*/
 
 
