@@ -100,21 +100,28 @@ section.sec1 {
   background-position: center;
 }
 
+
+/* GALLLERY!!!!! */
+
 #contact-section-styles-port{
   width: 100%;
-  height: 70vh;
-  background: url(/css/images/Blue-orbs.JPG);
-  background-size: cover;
-  background-position: center;
+  height: 55vh;
 }
-
-#portfolio-section-styles{
+section.sec2 {
   width: 100%;
   height: 100vh;
-  background: url(/css/images/Blue-orbs.JPG);
-  background-size: cover;
-  background-position: center;
 }
+
+.sec2 {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ======================= */
+
+
+
 
 #contact-section-styles{
   width: 100%;
@@ -156,6 +163,7 @@ h1 {
   font-size: 100px;
   text-align: center; 
   font-family: 'Roboto Condensed';
+  padding-bottom: 20px;
 }
 
 h2 {
@@ -194,7 +202,7 @@ h2 {
 footer{
   height: 160px;
   background: #100806;
-  
+  padding: 40px;
 }
 
 .footer-text {
@@ -253,12 +261,18 @@ a{
   height: 30px;
 }
 
+.center p{
+  padding: 5px;
+  height: 30px;
+}
+
 .center a:hover {
   background-color: #ddd;
   color: black;
 }
 
 .container{
+  padding-top: 20px;
   margin: .5vw;
   margin-left: 100px;
   margin-right: 100px;
@@ -278,11 +292,26 @@ a{
   flex: auto;
   width: 200px;
   margin: .5vw;
+  padding: 2px;
 }
 
 .container div img {
   width: 100%;
   height: auto;
+}
+
+/* .center {
+  margin: 40px;
+} */
+
+.sub-head{
+  font-size: 1em;
+}
+
+
+.wrap a:hover{
+  background:white;
+  color:black
 }
 
 

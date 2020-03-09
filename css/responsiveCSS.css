@@ -47,12 +47,17 @@
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .topnav a:not(:first-child) {display: none;}
  .topnav a.icon {
    float: right;
    display: block;
  } 
+
+ .content {
+   margin-top: 100px;
+ }
+ 
  
   li {
    display: none;
@@ -79,7 +84,6 @@
  height: 100%;
  background: #100806;
  right: 1000px;
- /* text-align: center; */
 }
 
 #sidebar.active {
@@ -152,6 +156,8 @@ ol{
   margin-right: 50px;
 }
 
+
+
 }
 
 
@@ -170,9 +176,7 @@ ol{
      font-size: 50px;
    }
 
-   h2{
-     font-size: 30px;
-   }
+   
 
    .content p {
     width: 90%;
@@ -194,6 +198,7 @@ ol{
     padding: 10px 10px;
   }
 
+
 }
 
 /*=========================================================================
@@ -201,15 +206,7 @@ ol{
 =====================================================================*/
 
 @media screen and (max-width: 700px) {
-  h1 {
-    font-size: 35px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
+ 
 
   .toTheRight {
     display: flex;
@@ -226,10 +223,9 @@ ol{
 
 @media screen and (max-width: 636px) {
   section.sec1 {
-    /* background: url(/css/images/Blue-orbs.JPG); */
     background: cover;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-position: center;
   }
 
@@ -259,7 +255,7 @@ ol{
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   input.input100 {
@@ -281,7 +277,13 @@ ol{
   }
 
   
+  .sub-head{
+    font-size: 12px;
+  }
 
+  #contact-section-styles-port {
+    height: 60vh;
+  }
   
 }
 
@@ -315,9 +317,10 @@ ol{
 
  @media screen and (max-width: 450px) {
   h1 {
-    font-size: 30px;
+    font-size: 40px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 20px;
   }
 
 
@@ -333,9 +336,11 @@ ol{
     padding: 0;
   }
 
+/* PORTFOLIO !!! */
   .container {
     margin-left: 10px;
     margin-right: 10px;
+    columns: 2;
   }
 }
 
@@ -348,6 +353,8 @@ ol{
      padding: 20px;
    }
  }
+
+
 
  
 
