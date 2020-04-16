@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact -- Zavier Myles</title>
+  <title>Contact - Zavier Myles</title>
   <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -12,13 +12,14 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contact-styles.css">
   <link rel="stylesheet" href="css/responsiveCSS.css">
+<!-- BOOT-->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> <!--GOOGLE FONT-->
 </head>
 <body id="noMove">
     
-  <nav>
-    <a href="index.html"></a><div class="logo">LOGO</div></a> 
+  <nav class="noMove">
+    <a href="index.html"><div class="logo">LOGO</div></a>  
     <ul class="topnav">
     <li><a href="index.html">Home</a></li>
     <li><a href="/#About">About</a></li>
@@ -50,55 +51,72 @@
     </header>
     
   </section>
+  
+      <div class="container-contact100" >
+          <div class="wrap-contact100">
+            <form class="contact100-form validate-form" id="contact-form form" action="https://formspree.io/zmyles1998@gmail.com"
+            method="POST">
+              <span class="contact100-form-title">
+                Get in Touch
+              </span>
+      
+              <div class="wrap-input100 rs1-wrap-input100 validate-input" >
 
-  <section>
+                <!-- ERROR MESSAGE-->
+                
+                <input class="input100 firstName invalid" type="text" name="FirstName"  id ="inputFirstName" placeholder="First Name" required>
+              </div>
+      
+              <div class="wrap-input100 rs1-wrap-input100 validate-input">
+                
+                <!-- ERROR MESSAGE-->
+                  <div  id ="error" ></div>
+                <input class="input100 lastName" type="text" name="lastName" id ="inputLastName"placeholder="Last Name" required>
+              </div>
+      
+              <div class="wrap-input100">
 
-    <div class="container-contact100" >
-      <div class="wrap-contact100">
-        <form class="contact100-form validate-form">
-          <span class="contact100-form-title">
-            Get in Touch
-          </span>
-  
-          <div class="wrap-input100 rs1-wrap-input100 validate-input" >
-            <input class="input100" type="text" name="name" placeholder="First Name">
-          </div>
-  
-          <div class="wrap-input100 rs1-wrap-input100 validate-input">
-            <input class="input100" type="text" name="email" placeholder="Last Name">
-          </div>
-  
-          <div class="wrap-input100">
-            <input class="input100" type="text" name="web" placeholder="Email">
-          </div>
+                  <div  class="status">
 
-          <div class="wrap-input100">
-              <input class="input100" type="text" name="web" placeholder="Subject">
-            </div>
-  
-          <div class="wrap-input100 validate-input">
-            
-            <textarea class="input100" name="message" placeholder="Your message here..."></textarea>
-          </div>
-  
-          <div class="container-contact100-form-btn">
-            <div class="wrap-contact100-form-btn">
-              <div class="contact100-form-bgbtn"></div>
-              <button class="contact100-form-btn">
-                Submit
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
+                  </div>
+                <input class="input100 email" type="text" name="email" id ="inputEmail"placeholder="Email">
+              </div>
     
+              <div class="wrap-input100">
 
+                  
+                  <input class="input100 subject" type="text" name="subject" id ="inputSubject"placeholder="Subject" required>
+                </div>
+      
+              <div class="wrap-input100 validate-input">
+                
+                  <div class="invalid-input">Check this box</div>
+                <textarea class="input100 message" id="inputMessage"  type="text" name="message" placeholder="Your message here..." required></textarea>
+                
+              </div>
+      
+              <div class="container-contact100-form-btn">
+                <div class="wrap-contact100-form-btn">
+                  <div class="contact100-form-bgbtn"></div>
+                  <button  type="submit" class="contact100-form-btn submit">
+                    Submit
+                  </button>
+                </div>
+              </div>
+
+
+              <input type="hidden" name="_next" value="Contact.html"/> <!-- Takes user back to website -->
+            </form>
+          </div>
+    
+    
       <footer>
           <a href="https://www.instagram.com/fujiponyo/"><div alt="instagram" class="instagram-symbol"></div></a>
           <div class="arrow" > </div>
           <div class="footer-text">Follow me on Instagram</div>
       </footer>
   
+      
 
 <script src="scripts.js"></script>
 </body>

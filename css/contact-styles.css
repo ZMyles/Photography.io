@@ -16,9 +16,9 @@
 	box-sizing: border-box;
 }
 
-body, html {
+/* body, html {
 	height: 100%;
-}
+} */
 
 input {
 	outline: none;
@@ -30,9 +30,9 @@ textarea {
   border: none;
 }
 
-textarea:focus, input:focus {
+/* textarea:focus, input:focus {
   border-color: transparent !important;
-}
+} */
 
 
 
@@ -119,7 +119,7 @@ button:hover {
   background: #f2f2f2;
   border-radius: 2px;
   font-size: 20px;
-  color: #8d8989;
+  color: black;
   line-height: 1.2;
   padding: 0 28px;
 }

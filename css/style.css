@@ -9,7 +9,7 @@ body {
   padding: 0;
   font-family: 'Quicksand';
   background: #100806;
-  color: white;
+  color:   white;
 }
 
 nav {
@@ -70,19 +70,7 @@ nav ul li a {
   transition: .3s;
 }
 
-nav.black ul li a {
-  /* color: #fff; */
-}
 
-nav ul li a:focus {
-  /* outline:none; */
-}
-
-nav ul li a.active {
-  /* background: #e2472f; */
-  /* color: #fff; */
-  /* border-radius: 6px; */
-}
 
 li{
   transition: 0.3s;
@@ -277,12 +265,13 @@ a{
   margin-left: 100px;
   margin-right: 100px;
   font-size: 0;
-  display: -ms-flexbox;
-  -ms-flexbox-wrap: wrap;
+  display: -ms-flexbox; 
+   -ms-flexbox-wrap: wrap;
   -ms-flexbox-direction: column;
   -ms-flex-flow: row;
+
   flex-flow: row wrap;
-  display: -webkit-box;
+  /* display: -webkit-box; */
   display: flex;
 }
 
@@ -299,27 +288,63 @@ a{
   width: 100%;
   height: auto;
 }
+ 
+/* ============================== */
 
-/* .center {
-  margin: 40px;
-} */
 
-.sub-head{
-  font-size: 1em;
+div a img:hover{
+  opacity: 0.5;
+  
 }
 
-
+/* ============================== */
 .wrap a:hover{
   background:white;
   color:black
 }
 
+.sub-head{
+  font-size: 1em;
+}
+
+.noMove {
+  position: absolute;
+}
 
 
 
 
+/*============================================================================================
+==============================        Form-styles CSS       =============================
+==============================================================================================*/
+
+.invalid-input {
+  display: none;
+}
+
+.invalid-input:active {
+  display: block;
+}
 
 
+ /*=========================================================================
+================================ FOR SIDESCROLLING NAV BAR =================================
+=====================================================================*/
 
+
+.sideScrollMenu a {
+  border: white 1px solid;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.sideScrollMenu a:hover {
+  color: black;
+  background: white;
+}
+
+.inline{
+  display: inline-block;
+}
 
 

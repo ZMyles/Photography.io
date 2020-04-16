@@ -238,6 +238,15 @@ ol{
     margin-right: 20px;
   }
 
+  .contact-btn {
+    transition: all .25s;
+  }
+
+  .contact-btn:hover {
+    letter-spacing: 5px;
+  }
+  
+
 }
 
 /*=========================================================================
@@ -284,7 +293,6 @@ ol{
   #contact-section-styles-port {
     height: 60vh;
   }
-  
 }
 
 
@@ -323,25 +331,37 @@ ol{
     padding-bottom: 20px;
   }
 
+  .gradiant{
+    
+  }
+
+  .hscroll {
+    margin: 0 auto;
+    width: 200px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* add to center the items
+    text-align: center;
+    */
+  }
 
  }
 
 
  @media screen and (max-width: 400px) {
-  /* .container div {
-    margin: 0;
-  } */
 
   header{
     padding: 0;
   }
 
 /* PORTFOLIO !!! */
-  .container {
+  /* .container {
+    
     margin-left: 10px;
     margin-right: 10px;
-    columns: 2;
-  }
+    
+  } */
 }
 
  /*=========================================================================
@@ -354,19 +374,15 @@ ol{
    }
  }
 
+ @media screen and (max-width: 353px) {
+   .wrap{
+  align-content: 
+   }
+   
+ }
+
 
 
  
-
-
-
-
-
-
-
-
-
-
-
 
 

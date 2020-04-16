@@ -10,6 +10,8 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
+  <script type="text/javascript" src="lightbox.js"></script>
+  <link rel="stylesheet" href="css/lightbox.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contact-styles.css">
   <link rel="stylesheet" href="css/responsiveCSS.css">
@@ -20,7 +22,7 @@
     
 <div class="wrapper">
   <nav>
-    <a href="index.html"></a><div class="logo">LOGO</div></a> 
+    <a href="index.html"><div class="logo">LOGO</div></a> 
     <ul class="topnav">
     <li><a href="index.html">Home</a></li>
     <li><a href="/#About">About</a></li>
@@ -35,7 +37,7 @@
     <div id="sidebar">
       <div class="format">
         <ol><a href="index.html">HOME</a></ol>
-        <ol><a href="#About" onclick="hideNav()">ABOUT</a></ol>
+        <ol><a href="/#About" onclick="hideNav()">ABOUT</a></ol>
         <ol><a href="/Media.html">GALLERY</a></ol>
         <ol><a href="/Contact.html">CONTACT</a></ol>
       </div> 
@@ -49,40 +51,50 @@
 
     <header >
       <h1>GALLERY</h1>
-      <div class="wrap">
-        <a href="/Media.html" class="contact-btn">Portraits</a>
-        <a href="/Product.html" class="contact-btn">Product</a>
-        <a href="/Shoot.html" class="contact-btn">Shoot</a>
-    </div>  
+
+      <div class="gradiant">
+          <div class="hscroll sideScrollMenu">
+              <div class="inline"><a href="#">All</a></div>
+              
+            </div>
+      </div>
+        
     </header>
+    
   </section>
   
   <section class="content-Media">
-      
-      
-        
 
-      <h2>Portraits</h2> 
 
-      <div class="container" id="media-gallery">
-            <div><img src="css/images/Contrast.jpg"></div>
-            <div><img src="css/images/Black-Plane.JPG"></div>
-            <div><img src="css/images/Red-car.jpg"></div>
-            <div><img src="css/images/Blue-orbs.JPG"></div>
-            <div><img src="css/images/DSC_0068.JPG"> </div> 
-            <div><img src="css/images/Contrast.jpg"></div>
-            <div><img src="css/images/Black-Plane.JPG"></div>
-            <div><img src="css/images/Red-car.jpg"></div>
+      
+
+      <!-- <h2>Portraits</h2>  -->
+
+      <div class="container">
+            <div><a  href="css/images/Contrast.jpg" data-lightbox="gallery"><img src="css/images/Contrast.jpg"></a></div>
+            <div><a  href="css/images/Black-Plane.JPG" data-lightbox="gallery"><img src="css/images/Black-Plane.JPG"></a></div>
+            <div><a  href="" data-lightbox="gallery"><img src="css/images/Red-car.jpg"></a></div>
+            <div><a  href="" data-lightbox="gallery"><img src="css/images/Blue-orbs.JPG"></a></div>
+            <div><a  href="" data-lightbox="gallery"><img src="css/images/DSC_0068.JPG"></a> </div> 
+            <div><a  href="" data-lightbox="gallery"><img src="css/images/DSC_0068.JPG"></a></div>
+            <div><a  href="" data-lightbox="gallery"><img src="css/images/Black-Plane.JPG"></a></div>
+            <div><a  href="" data-lightbox="gallery"><img src="css/images/Red-car.jpg"></a></div>
       </div>
         
+      <!-- FOR EACH IMAGES IN THE GALLERY -->
+      <!-- <div id="myModal" class="modal">   
+          <span class="close">&times</span>
+          <img class="modal-content" id="img01">
+        </div> -->
 
-    <footer>
-        <a href="https://www.instagram.com/fujiponyo/"><div alt="instagram" class="instagram-symbol"></div></a>
-        <div class="arrow" > </div>
-        <div class="footer-text">Follow me on Instagram</div>
-    </footer>
+       
   </section>
 
+  <footer>
+        <a href="https://www.instagram.com/fujiponyo/"><div alt="instagram" class="instagram-symbol"></div></a>
+        <div class="arrow" > </div>
+        <div class="footer-text">Follow me on Instagram</div>       
+    </footer>
   
 
 <script src="scripts.js"></script>
